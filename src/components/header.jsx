@@ -17,7 +17,6 @@ function Header() {
         
         <Link to="/" className="text-[28px] md:text-[32px] font-extrabold">LOGO</Link>
 
-        {/* Desktop Links */}
         <ul className="hidden md:flex items-center gap-6 lg:gap-10 text-[16px]">
           {navLinks.map((link) => (
             <li key={link.name}>
@@ -40,7 +39,6 @@ function Header() {
           </li>
         </ul>
 
-        {/* Mobile Button */}
         <button
           className="md:hidden text-2xl"
           onClick={() => setOpen(!open)}
@@ -49,7 +47,6 @@ function Header() {
         </button>
       </nav>
 
-      {/* Mobile Menu */}
       {open && (
         <div className="md:hidden bg-[#07042B] px-4 py-4">
           <ul className="flex flex-col gap-4 text-[16px]">
