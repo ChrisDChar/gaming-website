@@ -1,6 +1,6 @@
-import homeBg from "../../assets/homeIcons/home-bg.png";
-import CryEngineIcon from "../../assets/homeIcons/cryengineHome.png";
-import UnrealIcon from "../../assets/homeIcons/unrealHome.png";
+import homeBg from "../../assets/HomeIcons/home-bg.png";
+import CryEngineIcon from "../../assets/HomeIcons/cryengineHome.png";
+import UnrealIcon from "../../assets/HomeIcons/unrealHome.png";
 
 export default function HomeHero() {
   return (
