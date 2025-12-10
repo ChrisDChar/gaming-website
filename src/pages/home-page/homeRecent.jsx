@@ -1,9 +1,9 @@
-import HomeRecent1 from "../../assets/homeIcons/home-recent1.png";
-import HomeRecent2 from "../../assets/homeIcons/home-recent2.png";
-import HomeRecent3 from "../../assets/homeIcons/home-recent3.png";
-import HomeRecent4 from "../../assets/homeIcons/home-recent4.png";
-import HomeRecent5 from "../../assets/homeIcons/home-recent5.png";
-import HomeRecent6 from "../../assets/homeIcons/home-recent6.png";
+import HomeRecent1 from "../../assets/HomeIcons/home-recent1.png";
+import HomeRecent2 from "../../assets/HomeIcons/home-recent2.png";
+import HomeRecent3 from "../../assets/HomeIcons/home-recent3.png";
+import HomeRecent4 from "../../assets/HomeIcons/home-recent4.png";
+import HomeRecent5 from "../../assets/HomeIcons/home-recent5.png";
+import HomeRecent6 from "../../assets/HomeIcons/home-recent6.png";
 
 export default function HomeRecent() {
   return (
