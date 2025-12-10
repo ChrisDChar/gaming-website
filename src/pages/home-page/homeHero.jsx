@@ -5,7 +5,7 @@ import UnrealIcon from "../../assets/HomeIcons/unrealHome.png";
 export default function HomeHero() {
   return (
     <section
-      className="relative w-full bg-[#07042B] text-white py-10"
+      className="relative w-full text-white py-10"
       style={{
         backgroundImage: `url(${homeBg})`,
         backgroundSize: "contain",

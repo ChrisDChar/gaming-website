@@ -4,7 +4,7 @@ import homeDots from "../../assets/HomeIcons/home-dots.png";
 
 export default function HomeHighlight() {
   return (
-    <section className="w-full py-16 bg-[#0B0B1A]">
+    <section className="w-full py-16">
       <div className="max-w-6xl mx-auto px-4">
 
         <h2 className="text-white font-semibold text-[30px] leading-[1.88]">

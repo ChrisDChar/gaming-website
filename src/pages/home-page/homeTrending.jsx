@@ -14,7 +14,7 @@ const games = [
 
 export default function HomeTrending() {
   return (
-    <section className="w-full py-16 bg-[#0A0A1A]">
+    <section className="w-full py-16">
       <div className="max-w-6xl mx-auto px-4">
 
         <div className="flex justify-between items-center mb-10">
