@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
-
+import Img from "../../assets/HomeIcons/gaming.png";
+import Sss from "../../assets/HomeIcons/rasm1.png";
+import Ttt from "../../assets/HomeIcons/team1.png";
+import Ttt1 from "../../assets/HomeIcons/team2.png";
+import Ttt2 from "../../assets/HomeIcons/team3.png";
+import Ttt3 from "../../assets/HomeIcons/team5.png";
 
 export default function About() {
   const images = [
-    "/gaming.png",
+    Img,
     "https://images-eds-ssl.xboxlive.com/image?url=7flt5HU26ZSS3Tgted_TMty0wzqMQYpm03yD7eAPRtQBYO5dMlD18uZxNDuKXvpqyu8LBLLDa2ExSMugWI.Z_bWTR3T1YBI_5Zn3Oi46ePdxXjCBIGtOjtzxb5UgwDro9jWKgBk1GlNd91YDYWRQlXqjon39F.ht_xKn1VKfmmNwsqHqCHcSnFcsgP5A_zA8&h=576",
     "https://cdn.mos.cms.futurecdn.net/owvHPT5FYHD7u757t8PQtT.jpg",
     "https://images-eds-ssl.xboxlive.com/image?url=7flt5HU26ZSS3Tgted_TMty0wzqMQYpm03yD7eAPRtQBYO5dMlD18uZxNDuKXvpqVNMoskyrz49vqW7F3DZ.UIMoWcOVxAk1k9.Zc528RiKx_rAmUhA9JnxKhMgxmz..7.pqlaiqU7_LMfMgwoCiM3gWZMKEaL3l2HixKqcu8sM1SVVNrlKwmqurqQ4bnMPsgf..t_xXiT.xmzyc7y3_mcN.BephLTZgpxTYik6TCMk-&h=576",
@@ -90,15 +95,15 @@ export default function About() {
 
 
         <section className="py-[100px]">
-          <div className="container mx-auto max-w-[1440px]  w-full bg-white rounded-[20px] grid lg:grid-cols-2 gap-6 items-center p-6">
+          <div className="container mx-auto max-w-[1440px] max-[768px]:max-w-[1300px] max-[600px]:max-w-[1200px] w-full bg-white rounded-[20px] grid lg:grid-cols-2 gap-6 items-center p-6">
    
-            <div className="w-full lg:w-auto h-auto flex justify-center">
-             <img src="/rasm1.png" alt="rasm1" className="w-full max-w-[500px] h-auto object-cover rounded-lg" />
+            <div className="w-full lg:w-auto h-auto pt-[250px]">
+             <img src={Sss} alt="rasm1" className="w-full max-w-[900px] h-[700px] max-[768px]:max-w-[700px] max-[600px]:max-w-[500px] max-[768px]:h-[500px] max-[600px]:h-[400px] object-cover rounded-lg" />
             </div>
 
   
            <div className="flex flex-col justify-center py-8 px-4 lg:py-40 lg:px-12 text-black">
-            <p className="text-[20px] max-[600px]:text-[16px] mb-2">Lorem ipsum</p>
+            <p className="text-[20px] max-[600px]:text-[16px] pt-20">Lorem ipsum</p>
             <h1 className="text-[28px] max-[768px]:text-[24px] max-[600px]:text-[20px] font-bold leading-[158%] mt-4">Lorem Ipsum is simply dummy text <br /> of the printing and typesetting <br /> industry.</h1>
             <p className="mt-6 text-[18px] max-[600px]:text-[14px] leading-relaxed">Lorem Ipsum is simply dummy text of the printing and typesetting <br className="hidden sm:block"/> industry. Lorem Ipsum has been the industry's standard dummy <br className="hidden sm:block"/> text ever since the 1500s, when an unknown printer took a galley of <br className="hidden sm:block"/> type and scrambled it to make a type specimen book. It has <br className="hidden sm:block"/> survived not only five centuries. </p>
           </div>
@@ -114,36 +119,36 @@ export default function About() {
              {[
               {
                id: 1,
-               images: "/team1.png",
+               images: Ttt,
                name: 'John Peter',
                text: "COO"
               },
 
               {
                 id: 2,
-                images: "/team2.png",
+                images: Ttt1,
                 name: "John peter",
                 text: "COO"
               },
 
               {
                 id: 3,
-                images: "/team3.png",
+                images: Ttt2,
                 name: "John peter",
                 text:"COO"
               },
 
               {
                 id: 4,
-                images: "/team4.png",
+                images: Ttt3,
                 name: "John peter",
                 text: "COO"
               }
              ].map(team => (
-          <div key={team.id} className="bg-white rounded-2xl p-6 shadow-lg text-center mt-15">
+          <div key={team.id} className="bg-[#1C140F] rounded-2xl p-6 shadow-lg text-center mt-15">
            <img src={team.images} alt={team.name} className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"/>
-           <h3 className="text-xl font-semibold text-[black]">{team.name}</h3>
-           <p className="text-[black]">{team.text}</p>
+           <h3 className="text-xl font-semibold">{team.name}</h3>
+           <p>{team.text}</p>
          </div>
        ))}
      </div>
